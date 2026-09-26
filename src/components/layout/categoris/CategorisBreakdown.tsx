@@ -61,7 +61,7 @@ function CategorisBreakdown({ rows, maxTotal }: breakdownType) {
                   </div>
 
                   <p className="shrink-0 text-sm font-bold text-slate-800 dark:text-slate-200">
-                    {row.total}
+                    {row.total.toLocaleString("en-US")}
                   </p>
                 </div>
 

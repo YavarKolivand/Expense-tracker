@@ -32,7 +32,7 @@ function CategorisCards({totalIncome, totalExpense, rows}: categorisCardsType) {
           <div className="min-w-0">
             <p className="text-xs font-medium text-slate-400">Total Income</p>
             <p className="mt-0.5 truncate text-lg font-bold text-emerald-600 dark:text-emerald-400">
-              + {totalIncome}
+              + {totalIncome.toLocaleString("en-US")}
             </p>
           </div>
         </div>
@@ -44,7 +44,7 @@ function CategorisCards({totalIncome, totalExpense, rows}: categorisCardsType) {
           <div className="min-w-0">
             <p className="text-xs font-medium text-slate-400">Total Expense</p>
             <p className="mt-0.5 truncate text-lg font-bold text-rose-600 dark:text-rose-400">
-              - {totalExpense}
+              - {totalExpense.toLocaleString("en-US")}
             </p>
           </div>
         </div>

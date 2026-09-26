@@ -178,8 +178,8 @@ function TransactionTable() {
                         }
                       >
                         {transaction.type === "income"
-                          ? `+ ${transaction.amount}`
-                          : `- ${transaction.amount}`}
+                          ? `+ ${transaction.amount.toLocaleString("en-US")}`
+                          : `- ${transaction.amount.toLocaleString("en-US")}`}
                       </span>
                     </td>
 
