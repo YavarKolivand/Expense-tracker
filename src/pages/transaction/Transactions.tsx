@@ -23,7 +23,14 @@ function Transactions() {
   };
 
   if (transactions.length === 0) {
-    return <EmptyList />;
+    return (
+      <div className="flex flex-col w-full md:w-4/5 dark:bg-slate-900 dark:text-white">
+        <Header title="Transactions" />
+        <div className="container mx-auto my-6 px-2 sm:px-4 md:px-6 lg:px-8">
+          <EmptyList />
+        </div>
+      </div>
+    );
   }
 
   return (
